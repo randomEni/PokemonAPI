@@ -1,0 +1,12 @@
+<div class="formList">
+  <form #searchForm="ngForm" class="search">
+    <p class="instruct">Pokemons du N°</p>
+    <input type="text" name="origine" class="field" ngModel>
+    <p class="instruct">à</p>
+    <input type="text" name="fin" class="field" ngModel>
+    <button (click)="origineForm(searchForm.value)" class="btn">GO</button>
+  </form>
+</div>
+
+
+
