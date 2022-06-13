@@ -1,0 +1,20 @@
+<div class="cards">
+  <div *ngFor="let p of pokedex" class="pokemon">
+    <img [src]="p.sprites.other['official-artwork'].front_default" alt="{{p.name}}" class="image">
+    <div class="container">
+      <p id="id">n°{{p.id}}</p>
+      <p id="name">{{p.name }}</p>
+
+      <div *ngFor="let t of p.types" class="type">
+        <p id="type">{{t.type.name}}</p>
+      </div>
+
+      <p id="taille"><b>Taille : </b>{{p.height }}0 cm</p>
+      <p id="poids"><b>Poids : </b>{{p.weight  }} g</p>
+    </div>
+  </div>
+</div>
+
+
+
+
